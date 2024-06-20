@@ -1,13 +1,23 @@
+import { Footer } from "../widgets/Footer"
+import { Header } from "../widgets/Header"
+import useVh from "./hooks/useVh"
+
 import "./styles/index.scss"
+import "./ui/App.scss"
 
 function App() {
+  const vh = useVh();
 
   return (
-    <div className="app">
-      <h1>Test</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, commodi nisi necessitatibus aperiam reprehenderit quod nesciunt saepe suscipit totam cupiditate vitae eligendi ducimus magnam? A iusto aliquam ipsam earum soluta.
-      </p>
+    <div className="app" style={{
+      "--vh": `${vh}px`
+    }}>
+      <Header className="app__header"/>
+      <main className="app__main">
+        <div className="container">
+        </div>
+      </main>
+      <Footer />
     </div>
   )
 }

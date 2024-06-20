@@ -1,0 +1,32 @@
+.header {
+  padding: 16px 0;
+  color: var(--cl-light);
+  background-color: var(--cl-dark);
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  @media (max-width: 576px) {
+    gap: 4px;
+  }
+
+  img {
+    width: 32px;
+
+    @media (max-width: 576px) {
+      width: 24px;
+    }
+  }
+
+  span {
+    font-size: 24px;
+    font-weight: 500;
+
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
+}

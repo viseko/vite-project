@@ -1,0 +1,13 @@
+:root {
+  // Цвета
+  --cl-dark: #333;
+  --cl-light: #eee;
+
+  // Размеры
+  --container-size: 1900px;
+  --container-padding: 24px;
+  
+  @media (max-width: $sm) {
+    --container-padding: 16px;
+  }
+}
