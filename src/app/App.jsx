@@ -1,22 +1,14 @@
-import { useState } from "react"
+import "./styles/index.scss"
 
 function App() {
-  const [count, setCount] = useState(1);
-
-  const handler = () => {
-    setCount(count + 1);
-  };
 
   return (
-    <>
-      <h1>Counter</h1>
-      <button
-        onClick={handler}
-        className={styles.button}
-      >
-        Current {count}
-      </button>
-    </>
+    <div className="app">
+      <h1>Test</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, commodi nisi necessitatibus aperiam reprehenderit quod nesciunt saepe suscipit totam cupiditate vitae eligendi ducimus magnam? A iusto aliquam ipsam earum soluta.
+      </p>
+    </div>
   )
 }
 
